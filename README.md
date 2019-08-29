@@ -14,9 +14,9 @@ PHPOK is an enterprise station CMS system developed by PHP + MYSQL language.
 
 **[5]PHPOK 5.2.116 module_control.php file has an arbitrary file upload vulnerability.Remote background admin privilege user can use this vulnerability to control the server.**
 
-**[5]PHPOK 5.2.116 has a SQL injection vulnerability in \framework\admin\order_control.php. Remote background admin privilege user can exploit the vulnerability to obtain database sensitive information.
+**[6]PHPOK 5.2.116 has a SQL injection vulnerability in \framework\admin\order_control.php. Remote background admin privilege user can exploit the vulnerability to obtain database sensitive information.**
 
-**[6]PHPOK 5.2.116 has a SQL injection vulnerability in \framework\admin\open_control.php. Remote background admin privilege user can exploit the vulnerability to obtain database sensitive information.
+**[7]PHPOK 5.2.116 has a SQL injection vulnerability in \framework\admin\open_control.php. Remote background admin privilege user can exploit the vulnerability to obtain database sensitive information.**
 
 _ _ _
 
@@ -284,7 +284,7 @@ Visit ```/_app/ss/ff1.php```
 
 ![22.png](./img/22.png)
 
-**[4]**
+**[5]**
 
 In the import_f function of \framework\admin\module_control.php:
 
@@ -314,7 +314,7 @@ Visit ```/_cache/setting.php?aaa=phpinfo(); ```to execute webshell:
 
 ![27.png](./img/27.png)
 
-**[5]**
+**[6]**
 
 In the index_f function of \framework\admin\order_control.php:
 
@@ -334,7 +334,7 @@ Can see that the request was delayed by 5 seconds.
 
 ![30.png](./img/30.png)
 
-**[6]**
+**[7]**
 
 In the upload_f function of \framework\admin\open_control.php:
 

